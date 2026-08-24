@@ -198,7 +198,13 @@
   html[dir="rtl"] .badge .cat{ font-family:'Noto Sans Arabic', sans-serif; letter-spacing:0; text-transform:none; font-size:0.78rem; }
 
   /* ABOUT */
-  .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+  .about-grid{ display:grid; grid-template-columns:220px 1fr 1fr; gap:40px; align-items:start; }
+  .about-photo{
+    width:100%; aspect-ratio:3/4; object-fit:cover;
+    border-radius:6px; border:1px solid var(--line);
+    background:var(--basalt-2);
+    display:block;
+  }
   .about-grid p{ color:var(--sandstone-dim); margin-bottom:18px; font-size:0.99rem; }
   .about-grid p strong{ color:var(--papyrus); font-weight:600; }
   .credential{
@@ -206,7 +212,8 @@
     background:rgba(58,107,111,0.06);
   }
   .credential .eyebrow{ margin-bottom:8px; display:block; }
-  @media(max-width:780px){ .about-grid{ grid-template-columns:1fr; gap:32px; } }
+  @media(max-width:900px){ .about-grid{ grid-template-columns:1fr 1fr; } .about-photo{ grid-column:1 / -1; max-width:220px; margin-bottom:8px; } }
+  @media(max-width:780px){ .about-grid{ grid-template-columns:1fr; gap:32px; } .about-photo{ grid-column:auto; } }
 
   /* CONTACT */
   footer{ padding:90px 0 60px; text-align:center; }
@@ -354,6 +361,7 @@
       <h2 data-en="From youth work to the screen." data-ar="من العمل الشبابي إلى الشاشة.">From youth work to the screen.</h2>
     </div>
     <div class="about-grid">
+      <img class="about-photo" src="profile.jpg" alt="Muawia Ismail Ibrahim">
       <div>
         <p data-en-html="&lt;strong&gt;Muawia Ismail Ibrahim&lt;/strong&gt; is a Sudanese youth leader and AI prompt engineering specialist. He previously served as Head of Office for Sudan's Federal Minister of Youth and Sports, and holds a leadership position at the Sudanese Authority for Youth Empowerment." data-ar-html="&lt;strong&gt;معاوية إسماعيل إبراهيم&lt;/strong&gt; شخصية سودانية مهتمة بالعمل الشبابي وخبير في هندسة أوامر الذكاء الاصطناعي. شغل سابقًا منصب مدير مكتب وزير الشباب والرياضة الاتحادي بالسودان، ويشغل حاليًا موقعًا قياديًا في الهيئة السودانية لتمكين الشباب.">
           <strong>Muawia Ismail Ibrahim</strong> is a Sudanese youth leader and AI prompt engineering specialist. He previously served as Head of Office for Sudan's Federal Minister of Youth and Sports, and holds a leadership position at the Sudanese Authority for Youth Empowerment.
@@ -380,7 +388,7 @@
     <h2 data-en="Let's talk about the next film." data-ar="لنتحدث عن الفيلم القادم.">Let's talk about the next film.</h2>
     <p data-en="For festival programming, press, or collaboration inquiries." data-ar="لبرمجة المهرجانات أو الاستفسارات الصحفية أو التعاون.">For festival programming, press, or collaboration inquiries.</p>
     <div class="contact-links">
-      <a href="mailto:mawtala2028@gmail.com " data-en="Email" data-ar="البريد الإلكتروني">Email</a>
+      <a href="mailto:mawya1214@gmail.com " data-en="Email" data-ar="البريد الإلكتروني">Email</a>
       <a href="https://wa.me/249912153573" target="_blank" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
     </div>
     <div class="foot-note">© 2026 MUAWIA ISMAIL IBRAHIM — SUDAN</div>
